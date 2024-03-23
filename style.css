@@ -572,8 +572,8 @@ body,
         border: 1px solid black;
         margin-top: 2rem;
         margin-bottom: 1rem;
+        gap: .5rem;
         color: #ffffff;
-        background: #2E7EB7;
         background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
     }
 
@@ -587,6 +587,7 @@ body,
         display: flex;
         justify-content: flex-end;
         margin-top: 1rem;
+        margin-bottom: -.5rem;
     }
 
     .chip{
@@ -599,12 +600,18 @@ body,
        padding: 0;
     }
 
+    .card-uid{
+        margin: 0 auto;
+    }
+
     .card-footer{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         font-size: small;
         font-weight: 600;
+        height: 3rem;
+        margin-top: .4rem;
     }
 
     mark {
@@ -1305,10 +1312,10 @@ body,
         width: 23rem;
         height: 13rem;
         border: 1px solid black;
-        color: #ffffff;
         margin-top: 2rem;
         margin-bottom: 1rem;
-        background: #2E7EB7;
+        gap: .5rem;
+        color: #ffffff;
         background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
     }
 
@@ -1322,6 +1329,7 @@ body,
         display: flex;
         justify-content: flex-end;
         margin-top: 1rem;
+        margin-bottom: -.5rem;
     }
 
     .chip{
@@ -1334,12 +1342,18 @@ body,
        padding: 0;
     }
 
+    .card-uid{
+        margin: 0 auto;
+    }
+
     .card-footer{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         font-size: small;
         font-weight: 600;
+        height: 3rem;
+        margin-top: .4rem;
     }
 
     mark {
