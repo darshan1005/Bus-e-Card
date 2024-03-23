@@ -11,10 +11,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .bus-icon {
+            animation: flip 2s;
+        }
+
+        @keyframes flip {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            50% {
+                transform: rotateY(180deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    
+
     <section class="profile-section">
         <div class="std-app head" style="display: flex; flex-direction: row;align-items: center;">
             <img class="menu-icon" src="./Bus-UI/menu-icon.png" alt="">
@@ -125,8 +144,8 @@
                     </div>
                 </li>
                 <li class="list-group-item">Help&Support</li>
-                <li class="list-group-item" style="background: rgb(222, 222, 222); color: red;">
-                    <button class="close-btn" onclick="closeMenu()">Close</button>
+                <li class="list-group-item" onclick="closeMenu()" style="background: rgb(222, 222, 222); color: red;">
+                    <button class="close-btn">Close</button>
                 </li>
             </ul>
         </div>
