@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus-profile</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <section class="profile-section">
+        <div class="std-app head" style="display: flex; flex-direction: row;align-items: center;">
+            <img class="menu-icon" src="./Bus-UI/menu-icon.png" alt="">
+            <span class="coins-total">270 &nbsp;<img class="bus-icon" src="./Bus-UI/bus-coin.png" alt=""
+                    style="width: 10vw;"></span>
+            <a href="./Home.html">
+                <img class="profile-home-icon" src="./Bus-UI/home-fill.png" alt="">
+            </a>
+        </div>
+
+        <div class="card user-card" style="background: rgb(0, 0, 133);">
+            <div class="card-head chip-img">
+                <img class="chip" src="./Bus-UI/chip.png" alt="">
+            </div>
+            <div class="card_body">
+                <img src="./Bus-UI/RTC.png" alt="" class="card-bus-img">
+                <h4 class="card-uid">E8&nbsp;58&nbsp;87&nbsp;76&nbsp;<mark>Active</mark></h4>
+            </div>
+            <div class="card-footer" style="background: rgb(18, 0, 85);">
+                <p class="user-name">Battula Darshan</p>
+                <p class="exp-date">Exp: Jun 1, 2023</p>
+            </div>
+        </div>
+
+        <div class="recharge">
+            <form class="drop-form" action="">
+                <label for="plans">Recharge:</label>
+                <select name="plans" id="plans">
+                    <option value="plan">--</option>
+                    <option value="3Months">3Months 300.00</option>
+                    <option value="6months">6months 600.00</option>
+                    <option value="9months">9months 900.00</option>
+                    <option value="1year">1year 950.00</option>
+                </select>
+                <br><br>
+                <input class="plan_submit" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <h4 style="text-align: center;font-size: medium;">Card Tracking</h4>
+        <div class="table container grid" style="width:fit-content;">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Coins</th>
+                        <th scope="col">Left</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8/6/2023</td>
+                        <td>12:00:56</td>
+                        <td>10</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>8/6/2023</td>
+                        <td>16:00:56</td>
+                        <td>10</td>
+                        <td>280</td>
+                    </tr>
+                    <tr>
+                        <td>8/6/2023</td>
+                        <td>17:30:56</td>
+                        <td>10</td>
+                        <td>270</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="overlay" id="overlay"></div>
+
+        <div class="card card-list" style="display: none;" id="listCard">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+
+                    <div class="accordians">
+                        <p class="accordian title">
+                            Q&A
+                        </p>
+                        <details>
+                            <summary>How E-card works ?</summary>
+                            <p class="accordian-text">
+                                The E-card system is straightforward to use. Simply recharge your card, and you’re ready
+                                to go.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Benifits of E-card</summary>
+                            <p class="accordian-text">
+                                The E-card allows cashless travel, utilizing your accumulated credit points.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>How to Renew the application ?</summary>
+                            <p class="accordian-text">
+                                To renew your application, navigate to your profile, click on the menu, and select the
+                                renewal option.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>what is the payment Method avaliable ?</summary>
+                            <p class="accordian-text">
+                                Razorpay is one of the available payment methods.</p>
+                        </details>
+                    </div>
+                </li>
+                <li class="list-group-item">Help&Support</li>
+                <li class="list-group-item" style="background: rgb(222, 222, 222); color: red;">
+                    <button class="close-btn" onclick="closeMenu()">Close</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function closeMenu() {
+            const listCard = document.getElementById('listCard');
+            const overlay = document.getElementById('overlay');
+            listCard.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const listCard = document.getElementById('listCard');
+            const overlay = document.getElementById('overlay');
+
+            menuIcon.addEventListener('click', function (event) {
+                listCard.style.display = 'block';
+                overlay.style.display = 'block';
+                event.stopPropagation();
+            });
+        });
+    </script>
+</body>
+
+</html>
