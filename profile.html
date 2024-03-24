@@ -47,10 +47,14 @@
         <div class="card user-card" style="background: rgb(0, 0, 133);">
             <div class="card-head chip-img">
                 <img class="chip chip-gold" src="./Bus-UI/NFC.png" alt="">
+                <img src="./Bus-UI/RTC.png" alt="" class="card-bus-img">
                 <img class="chip chip-signal" src="./Bus-UI/chip.png" alt="">
             </div>
+            <!-- <div class="card-aside">
+                <img src="./Bus-UI/bus4.jpg" alt="" srcset="">
+            </div> -->
             <div class="card_body">
-                <img src="./Bus-UI/RTC.png" alt="" class="card-bus-img">
+                <img src="./Bus-UI/bus4.jpg" alt="" class="card-profile-img">
                 <h4 class="card-uid">E8&nbsp;58&nbsp;87&nbsp;76&nbsp;<mark>Active</mark></h4>
             </div>
             <div class="card-footer" style="background: rgb(18, 0, 85);">
@@ -74,8 +78,22 @@
             </form>
         </div>
 
-        <h4 style="text-align: center;font-size: medium;">Card Tracking</h4>
-        <div class="table container grid" style="width:fit-content;">
+        <div class="subscription">
+            <button class="view-subscription">View Subscription</button>
+            <div class="subscription-details drop-form" style="display: none;">
+                <p><strong>Subscription Plan:</strong> 3 months Plan</p>
+                <p><strong>Purchase Date:</strong> January 1, 2024</p>
+                <p><strong>Expiration Date:</strong> March 1, 2024</p>
+                <p><strong>Amount:</strong> Rs 300.00</p>
+                <p><strong>Person Name:</strong> Battula Darshan</p>
+                <p><strong>Payment Method:</strong> Razo pay</p>
+                <p><strong>Time Stamp:</strong> 2024-01-01 12:00:00</p>
+                <p><strong>UID:</strong> E8 58 87 76 </p>
+            </div>
+        </div>
+
+        <h5 style="text-align: center;">Card Tracking</h5>
+        <div class="table container grid" style="width:fit-content;height: 15rem; overflow-y: auto;">
             <table>
                 <thead>
                     <tr>
@@ -86,6 +104,42 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>8/6/2023</td>
+                        <td>12:00:56</td>
+                        <td>10</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>8/6/2023</td>
+                        <td>16:00:56</td>
+                        <td>10</td>
+                        <td>280</td>
+                    </tr>
+                    <tr>
+                        <td>8/6/2023</td>
+                        <td>17:30:56</td>
+                        <td>10</td>
+                        <td>270</td>
+                    </tr>
+                    <tr>
+                        <td>8/6/2023</td>
+                        <td>12:00:56</td>
+                        <td>10</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>8/6/2023</td>
+                        <td>16:00:56</td>
+                        <td>10</td>
+                        <td>280</td>
+                    </tr>
+                    <tr>
+                        <td>8/6/2023</td>
+                        <td>17:30:56</td>
+                        <td>10</td>
+                        <td>270</td>
+                    </tr>
                     <tr>
                         <td>8/6/2023</td>
                         <td>12:00:56</td>
@@ -171,6 +225,20 @@
                 event.stopPropagation();
             });
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const viewSubscriptionButton = document.querySelector('.view-subscription');
+            const subscriptionDetails = document.querySelector('.subscription-details');
+
+            viewSubscriptionButton.addEventListener('click', function () {
+                if (subscriptionDetails.style.display === 'none' || subscriptionDetails.style.display === '') {
+                    subscriptionDetails.style.display = 'block';
+                } else {
+                    subscriptionDetails.style.display = 'none';
+                }
+            });
+        });
+
     </script>
 </body>
 

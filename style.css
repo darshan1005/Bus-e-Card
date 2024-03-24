@@ -110,21 +110,21 @@ body,
         color: gray;
     }
 
-    .route-container{
+    .route-container {
         width: 95%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         place-items: center;
     }
 
-    .route-card{
+    .route-card {
         width: 4rem;
         height: 6rem;
         border-radius: 5px;
         box-shadow: 0 0 3px black;
     }
 
-    .route-card.card1 p{
+    .route-card.card1 p {
         background: rgba(70, 78, 84, 0.653);
         width: 4rem;
         height: 2rem;
@@ -134,7 +134,8 @@ body,
         text-align: center;
         padding: 4px;
     }
-    .route-card.card2 p{
+
+    .route-card.card2 p {
         background: rgba(67, 90, 125, 0.653);
         width: 4rem;
         height: 2rem;
@@ -144,7 +145,8 @@ body,
         text-align: center;
         padding: 4px;
     }
-    .route-card.card3 p{
+
+    .route-card.card3 p {
         background: rgba(0, 0, 0, 0.521);
         width: 4rem;
         height: 2rem;
@@ -154,7 +156,8 @@ body,
         text-align: center;
         padding: 4px;
     }
-    .route-card.card4 p{
+
+    .route-card.card4 p {
         background: rgba(1, 77, 139, 0.452);
         width: 4rem;
         height: 2rem;
@@ -165,15 +168,15 @@ body,
         padding: 4px;
     }
 
-    .route-card.card1{
+    .route-card.card1 {
         background: url('./Bus-UI/application.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-clip: border-box;
         background-size: cover;
     }
-    
-    .route-card.card2{
+
+    .route-card.card2 {
         background: url('./Bus-UI/login.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -181,7 +184,7 @@ body,
         background-size: cover;
     }
 
-    .route-card.card3{
+    .route-card.card3 {
         background: url('./Bus-UI/recharge.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -189,7 +192,7 @@ body,
         background-size: cover;
     }
 
-    .route-card.card4{
+    .route-card.card4 {
         background: url('./Bus-UI/taptopay.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -197,7 +200,7 @@ body,
         background-size: cover;
     }
 
-    .route-content{
+    .route-content {
         font-size: 8px;
     }
 
@@ -257,7 +260,7 @@ body,
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 3rem;        
+        height: 3rem;
         border-bottom: 1px solid black;
         box-shadow: 0 0 6px black;
         background: white;
@@ -466,7 +469,7 @@ body,
         width: 80%;
     }
 
-    .captcha img{
+    .captcha img {
         width: 5rem;
     }
 
@@ -547,7 +550,7 @@ body,
 
     /* profile */
 
-    .coins-total{
+    .coins-total {
         font-size: 20px;
         font-weight: 600;
         display: flex;
@@ -558,16 +561,17 @@ body,
         margin-left: -3.5rem;
         width: 7rem;
     }
-    .profile-home-icon{
+
+    .profile-home-icon {
         margin-right: -2rem;
     }
 
-    .user-card{
+    .user-card {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         width: 80%;
-        height: 13rem;
+        height: 13.5rem;
         border: 1px solid black;
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -576,37 +580,43 @@ body,
         box-shadow: 0 0 4px black;
     }
 
-    .card-bus-img{
+    .card-profile-img{
         height: 4rem;
+        width: 4rem;
         margin: 0 auto;
+        border-radius: 50%;
     }
 
-    .chip-img{
-        width: 95%;
+    .chip-img {
+        width: 90%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 0 auto;
-        margin-top: .8rem;
+        margin-top: .2rem;
         margin-bottom: -.5rem;
-        gap: 7rem;
     }
 
-    .chip{
+    .card-bus-img {
+        height: 3rem;
+        margin: 0 auto;
+    }
+
+    .chip {
         width: 50px;
     }
 
-    .card_body{
-       display: grid;
-       place-content: center;
-       padding: 0;
-       margin-top: -.8rem;
+    .card_body {
+        display: grid;
+        place-content: center;
+        padding: 0;
+        gap: 4px;
     }
 
-    .card-uid{
+    .card-uid {
         margin: 0 auto;
     }
 
-    .card-footer{
+    .card-footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -616,31 +626,33 @@ body,
     }
 
     mark {
-        font-size: small;
+        font-size: 8px;
         background: rgb(30, 255, 0);
         padding: 3px;
-        border-radius: 4px;
+        border-radius: 2px;
     }
 
     .overlay {
         position: absolute;
-        top: 0;
+        top: 3rem;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); 
+        background-color: rgba(0, 0, 0, 0.5);
         display: none;
-        z-index: 9999; 
+        z-index: 9999;
     }
+
     /* menu card */
     .card-list {
-        width: 100%; 
+        width: 100%;
         position: fixed;
-        top: calc(100% + 10px); 
-        z-index: 10000; 
+        top: calc(100% + 10px);
+        z-index: 10000;
         font-size: small;
     }
-    .close-btn{
+
+    .close-btn {
         all: unset;
     }
 
@@ -652,11 +664,12 @@ body,
         margin-bottom: 10px;
     }
 
-    select, option{
+    select,
+    option {
         font-size: smaller;
     }
 
-    .drop-form{
+    .drop-form {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -664,11 +677,11 @@ body,
         gap: .2rem;
     }
 
-    .drop-form label{
+    .drop-form label {
         display: flex;
         margin-top: 9px;
     }
-    
+
     .plan_submit {
         text-align: center;
         width: max-content;
@@ -679,7 +692,34 @@ body,
         padding: 6px;
         font-size: smaller;
     }
+
+    /* subcription details */
+    .view-subscription {
+        background-color: #003079;
+        color: white;
+        padding: 4px;
+    }
+
+    .subscription {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        margin: 0 auto;
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .subscription-details {
+        border: 1px solid black;
+        padding: 3px;
+        text-align: center;
+        background-color: rgb(196, 196, 255);
+        margin-top: 3px;
+    }
+
+    /* card tracking */
     .table {
+        height: 8rem;
         display: flex;
         margin: 0 auto;
         border: 1px solid black;
@@ -687,15 +727,23 @@ body,
         padding: 10px;
     }
 
-    table th{
+    .table thead th {
+        position: sticky;
+        top: 0;
+        background-color: #cfcfcf;
+        z-index: 1;
+    }
+
+    table th {
         font-size: small;
     }
-    table td{
+
+    table td {
         font-size: smaller;
     }
 
     /* Accordian */
-    .accordians{
+    .accordians {
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
@@ -705,14 +753,15 @@ body,
         margin-bottom: 2rem;
     }
 
-    .accordian.title{
+    .accordian.title {
         font-size: large;
     }
 
-    details{
+    details {
         text-align: left;
     }
-    summary{
+
+    summary {
         margin: 3px;
         color: #ffffff;
         background: rgb(62, 142, 255);
@@ -720,7 +769,7 @@ body,
         padding: 5px;
     }
 
-    .accordian-text{
+    .accordian-text {
         text-align: left;
         padding: 5px;
         display: flex;
@@ -773,7 +822,7 @@ body,
         height: 100%;
         margin-top: 1rem;
     }
-    
+
     .carousel-item {
         position: relative;
     }
@@ -836,14 +885,14 @@ body,
         color: gray;
     }
 
-    .route-container{
+    .route-container {
         width: 95%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         place-items: center;
     }
 
-    .route-card{
+    .route-card {
         width: 6rem;
         height: 8rem;
         border-radius: 5px;
@@ -851,7 +900,7 @@ body,
         margin-top: 1rem;
     }
 
-    .route-card.card1 p{
+    .route-card.card1 p {
         background: rgba(70, 78, 84, 0.653);
         width: 6rem;
         height: 4rem;
@@ -862,7 +911,8 @@ body,
         padding-top: 1rem;
         font-size: small;
     }
-    .route-card.card2 p{
+
+    .route-card.card2 p {
         background: rgba(67, 90, 125, 0.653);
         width: 6rem;
         height: 4rem;
@@ -873,7 +923,8 @@ body,
         padding-top: 1rem;
         font-size: small;
     }
-    .route-card.card3 p{
+
+    .route-card.card3 p {
         background: rgba(0, 0, 0, 0.521);
         width: 6rem;
         height: 4rem;
@@ -884,7 +935,8 @@ body,
         padding-top: 1rem;
         font-size: small;
     }
-    .route-card.card4 p{
+
+    .route-card.card4 p {
         background: rgba(1, 77, 139, 0.452);
         width: 6rem;
         height: 4rem;
@@ -896,15 +948,15 @@ body,
         font-size: small;
     }
 
-    .route-card.card1{
+    .route-card.card1 {
         background: url('./Bus-UI/application.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-clip: border-box;
         background-size: cover;
     }
-    
-    .route-card.card2{
+
+    .route-card.card2 {
         background: url('./Bus-UI/login.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -912,7 +964,7 @@ body,
         background-size: cover;
     }
 
-    .route-card.card3{
+    .route-card.card3 {
         background: url('./Bus-UI/recharge.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -920,7 +972,7 @@ body,
         background-size: cover;
     }
 
-    .route-card.card4{
+    .route-card.card4 {
         background: url('./Bus-UI/taptopay.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -928,7 +980,7 @@ body,
         background-size: cover;
     }
 
-    .route-content{
+    .route-content {
         font-size: 8px;
     }
 
@@ -960,7 +1012,7 @@ body,
         text-align: center;
     }
 
-    .icons img{
+    .icons img {
         width: 5rem;
         height: 5rem;
     }
@@ -995,7 +1047,7 @@ body,
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 3rem;        
+        height: 3rem;
         border-bottom: 1px solid black;
         box-shadow: 0 0 6px black;
         background: white;
@@ -1160,14 +1212,14 @@ body,
         margin-right: -1rem;
     }
 
-    .coins-total{
+    .coins-total {
         font-size: 23px;
         font-weight: 600;
         display: flex;
         align-items: center;
     }
 
-    .bus-icon{
+    .bus-icon {
         width: 2rem;
     }
 
@@ -1219,7 +1271,7 @@ body,
         width: 80%;
     }
 
-    .captcha img{
+    .captcha img {
         width: 10rem;
     }
 
@@ -1292,7 +1344,7 @@ body,
         padding: 2px;
     }
 
-    .captcha-img{
+    .captcha-img {
         width: 10rem;
     }
 
@@ -1303,15 +1355,16 @@ body,
     }
 
     /* profile */
-    .profile-home-icon{
+    .profile-home-icon {
         margin-right: -2rem;
     }
-    .user-card{
+
+    .user-card {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         width: 23rem;
-        height: 13rem;
+        height: 13.5rem;
         border: 1px solid black;
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -1320,75 +1373,80 @@ body,
         box-shadow: 0 0 4px black;
     }
 
-    .card-bus-img{
+    .card-profile-img{
         height: 4rem;
+        width: 4rem;
         margin: 0 auto;
+        border-radius: 50%;
     }
 
-    .chip-img{
+    .chip-img {
         width: 90%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 0 auto;
-        margin-top: .8rem;
+        margin-top: .2rem;
         margin-bottom: -.5rem;
-        gap: 7rem;
     }
 
-    .chip{
+    .card-bus-img {
+        height: 3rem;
+        margin: 0 auto;
+    }
+
+    .chip {
         width: 50px;
     }
 
-    .card_body{
-       display: grid;
-       place-content: center;
-       padding: 0;
-       margin-top: -.8rem;
+    .card_body {
+        display: grid;
+        place-content: center;
+        padding: 0;
+        gap: 4px;
     }
 
-    .card-uid{
+    .card-uid {
         margin: 0 auto;
     }
 
-    .card-footer{
+    .card-footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         font-size: small;
         font-weight: 600;
         height: 3rem;
-        margin-top: .4rem;
     }
 
     mark {
-        font-size: small;
+        font-size: 8px;
         background: rgb(30, 255, 0);
         padding: 3px;
-        border-radius: 4px;
+        border-radius: 2px;
     }
 
     .overlay {
         position: fixed;
-        top: 0;
+        top: 3rem;
         left: 0;
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); 
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
         display: none;
-        z-index: 9999; 
+        z-index: 9999;
     }
 
     .card-list {
         display: flex;
         margin: 0 auto;
-        width: 90%; 
+        width: 90%;
         position: absolute;
-        top: calc(100% + 10px); 
-        z-index: 10000; 
+        top: calc(100% + 10px);
+        z-index: 10000;
         font-size: small;
     }
 
-    .close-btn{
+    .close-btn {
         all: unset;
     }
 
@@ -1400,11 +1458,12 @@ body,
         margin-bottom: 10px;
     }
 
-    select, option{
+    select,
+    option {
         font-size: smaller;
     }
 
-    .drop-form{
+    .drop-form {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1412,11 +1471,11 @@ body,
         gap: .2rem;
     }
 
-    .drop-form label{
+    .drop-form label {
         display: flex;
         margin-top: 9px;
     }
-    
+
     .plan_submit {
         text-align: center;
         width: max-content;
@@ -1427,23 +1486,57 @@ body,
         padding: 6px;
         font-size: smaller;
     }
+
+    /* subcription details */
+    .view-subscription {
+        background-color: #003079;
+        color: white;
+        padding: 4px;
+    }
+
+    .subscription {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        margin: 0 auto;
+        width: 20rem;
+        padding: 1rem;
+    }
+
+    .subscription-details {
+        border: 1px solid black;
+        padding: 3px;
+        text-align: center;
+        background-color: rgb(196, 196, 255);
+        margin-top: 3px;
+    }
+
+    /* Card Tracking */
     .table {
-        height: 14rem;
+        height: 10rem;
         margin: 0 auto;
         border: 1px solid black;
         box-shadow: inset 0 0 6px black;
         padding: 15px;
     }
 
-    table th{
+    .table thead th {
+        position: sticky;
+        top: 0;
+        background-color: #cfcfcf;
+        z-index: 1;
+    }
+
+    table th {
         font-size: medium;
     }
-    table td{
+
+    table td {
         font-size: medium;
     }
 
     /* Accordian */
-    .accordians{
+    .accordians {
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
@@ -1453,14 +1546,15 @@ body,
         margin-bottom: 2rem;
     }
 
-    .accordian.title{
+    .accordian.title {
         font-size: large;
     }
 
-    details{
+    details {
         text-align: left;
     }
-    summary{
+
+    summary {
         margin: 3px;
         color: #ffffff;
         background: rgb(62, 142, 255);
@@ -1468,7 +1562,7 @@ body,
         padding: 5px;
     }
 
-    .accordian-text{
+    .accordian-text {
         text-align: left;
         padding: 5px;
         display: flex;
