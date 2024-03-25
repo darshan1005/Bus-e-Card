@@ -43,6 +43,48 @@
                 <img class="profile-home-icon" src="./Bus-UI/home-fill.png" alt="">
             </a>
         </div>
+        
+        <div class="card card-list" style="display: none;" id="listCard">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+    
+                    <div class="accordians">
+                        <p class="accordian title">
+                            Q&A
+                        </p>
+                        <details>
+                            <summary>How E-card works ?</summary>
+                            <p class="accordian-text">
+                                The E-card system is straightforward to use. Simply recharge your card, and you’re ready
+                                to go.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Benifits of E-card</summary>
+                            <p class="accordian-text">
+                                The E-card allows cashless travel, utilizing your accumulated credit points.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>How to Renew the application ?</summary>
+                            <p class="accordian-text">
+                                To renew your application, navigate to your profile, click on the menu, and select the
+                                renewal option.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>what is the payment Method avaliable ?</summary>
+                            <p class="accordian-text">
+                                Razorpay is one of the available payment methods.</p>
+                        </details>
+                    </div>
+                </li>
+                <li class="list-group-item">Help&Support</li>
+                <li class="list-group-item" onclick="closeMenu()" style="background: rgb(222, 222, 222); color: red;">
+                    <button class="close-btn">Close</button>
+                </li>
+            </ul>
+        </div>
 
         <div class="card user-card" style="background: rgb(0, 0, 133);">
             <div class="card-head chip-img">
@@ -50,9 +92,6 @@
                 <img src="./Bus-UI/RTC.png" alt="" class="card-bus-img">
                 <img class="chip chip-signal" src="./Bus-UI/chip.png" alt="">
             </div>
-            <!-- <div class="card-aside">
-                <img src="./Bus-UI/bus4.jpg" alt="" srcset="">
-            </div> -->
             <div class="card_body">
                 <img src="./Bus-UI/bus4.jpg" alt="" class="card-profile-img">
                 <h4 class="card-uid">E8&nbsp;58&nbsp;87&nbsp;76&nbsp;<mark>Active</mark></h4>
@@ -162,48 +201,6 @@
             </table>
         </div>
         <div class="overlay" id="overlay"></div>
-
-        <div class="card card-list" style="display: none;" id="listCard">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-
-                    <div class="accordians">
-                        <p class="accordian title">
-                            Q&A
-                        </p>
-                        <details>
-                            <summary>How E-card works ?</summary>
-                            <p class="accordian-text">
-                                The E-card system is straightforward to use. Simply recharge your card, and you’re ready
-                                to go.
-                            </p>
-                        </details>
-                        <details>
-                            <summary>Benifits of E-card</summary>
-                            <p class="accordian-text">
-                                The E-card allows cashless travel, utilizing your accumulated credit points.
-                            </p>
-                        </details>
-                        <details>
-                            <summary>How to Renew the application ?</summary>
-                            <p class="accordian-text">
-                                To renew your application, navigate to your profile, click on the menu, and select the
-                                renewal option.
-                            </p>
-                        </details>
-                        <details>
-                            <summary>what is the payment Method avaliable ?</summary>
-                            <p class="accordian-text">
-                                Razorpay is one of the available payment methods.</p>
-                        </details>
-                    </div>
-                </li>
-                <li class="list-group-item">Help&Support</li>
-                <li class="list-group-item" onclick="closeMenu()" style="background: rgb(222, 222, 222); color: red;">
-                    <button class="close-btn">Close</button>
-                </li>
-            </ul>
-        </div>
     </section>
 
     <script>
