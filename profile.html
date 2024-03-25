@@ -53,6 +53,12 @@
                             Q&A
                         </p>
                         <details>
+                            <summary>Know ypur card</summary>
+                            <p class="accordian-text">
+
+                                The E-card contains three sections. The first section includes the user profile, the second section displays the user UID and active status, and the third section contains the user's name, plan expiry date, and a tap-to-pay NFC symbol indicating that the physical card supports tap-to-pay functionality.                            </p>
+                        </details>
+                        <details>
                             <summary>How E-card works ?</summary>
                             <p class="accordian-text">
                                 The E-card system is straightforward to use. Simply recharge your card, and you’re ready
@@ -80,6 +86,9 @@
                     </div>
                 </li>
                 <li class="list-group-item">Help&Support</li>
+                <a href="./openLogin.html">
+                    <li class="list-group-item">Logout</li>
+                </a>
                 <li class="list-group-item" onclick="closeMenu()" style="background: rgb(222, 222, 222); color: red;">
                     <button class="close-btn">Close</button>
                 </li>
@@ -88,17 +97,18 @@
 
         <div class="card user-card" style="background: rgb(0, 0, 133);">
             <div class="card-head chip-img">
-                <img class="chip chip-gold" src="./Bus-UI/NFC.png" alt="">
-                <img src="./Bus-UI/RTC.png" alt="" class="card-bus-img">
-                <img class="chip chip-signal" src="./Bus-UI/chip.png" alt="">
+                <img class="chip chip-gold" src="./Bus-UI/chip.png" alt="">
+                <img src="./Bus-UI/bus4.jpg" alt="" class="card-profile-img">
             </div>
             <div class="card_body">
-                <img src="./Bus-UI/bus4.jpg" alt="" class="card-profile-img">
-                <h4 class="card-uid">E8&nbsp;58&nbsp;87&nbsp;76&nbsp;<mark>Active</mark></h4>
+                <img src="./Bus-UI/RTC.png" alt="" class="card-bus-img">
+                <h5 class="card-uid">E8&nbsp;58&nbsp;87&nbsp;76&nbsp;<mark>Active</mark></h5>
             </div>
             <div class="card-footer" style="background: rgb(18, 0, 85);">
-                <p class="user-name">Battula Darshan</p>
-                <p class="exp-date">Exp: Jun 1, 2023</p>
+                <div class="user-exp">
+                    Battula Darshan <br> 01/06/2023
+                </div>
+                <img class="chip-signal" src="./Bus-UI/NFC-signal-White.png" alt="">
             </div>
         </div>
 
