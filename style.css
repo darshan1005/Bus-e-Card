@@ -596,6 +596,7 @@ body,
         width: 3.5rem;
         margin: 0 auto;
         border-radius: 50%;
+        border: 1px solid white;
     }
 
     .chip-gold {
@@ -1402,6 +1403,7 @@ body,
         width: 3.5rem;
         margin: 0 auto;
         border-radius: 50%;
+        border: 1px solid white;
     }
 
     .chip-gold {
